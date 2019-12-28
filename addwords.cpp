@@ -3,8 +3,7 @@
 #include <algorithm>
 #include <stdio.h>
 #include <stdlib.h>
-
-#define FILE_NAME "wordscape_dict/dict"
+#include "filename.hpp"
 
 int main(int argc, char **argv) {
 	if (argc == 1)

@@ -3,8 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <string>
-
-#define FILE_NAME "wordscape_dict/dict"
+#include "filename.hpp"
 
 #define MIN_WORD_LENGTH 3
 #define MAX_WORD_LENGTH 8
