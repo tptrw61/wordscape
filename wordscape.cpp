@@ -4,7 +4,7 @@
 #include <string.h>
 #include <string>
 
-#define FILE_NAME "words"
+#define FILE_NAME "wordscape_dict/dict"
 
 #define MIN_WORD_LENGTH 3
 #define MAX_WORD_LENGTH 8

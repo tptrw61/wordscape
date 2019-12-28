@@ -1,12 +1,14 @@
 all: wordscape addwords rmwords
 
-wordscape: wordscape.cpp words
+WORDS=wordscape_dict
+
+wordscape: wordscape.cpp $(WORDS)
 	g++ wordscape.cpp -o $@ -Wall
 
-addwords: addwords.cpp words
+addwords: addwords.cpp $(WORDS)
 	g++ addwords.cpp -o $@ -Wall
 
-rmwords: rmwords.cpp words
+rmwords: rmwords.cpp $(WORDS)
 	g++ rmwords.cpp -o $@ -Wall
 
 clean:

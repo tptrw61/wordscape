@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define FILE_NAME "words"
+#define FILE_NAME "wordscape_dict/dict"
 
 int main(int argc, char **argv) {
 	if (argc == 1)
