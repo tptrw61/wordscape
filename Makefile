@@ -17,6 +17,14 @@ addwords: addwords.cpp $(WORDS)/dict $(INC)/filename.hpp
 rmwords: rmwords.cpp $(WORDS)/dict $(INC)/filename.hpp
 	g++ -I $(INC) rmwords.cpp -o $@ $(CXXFLAGS)
 
+update_repo_dict: $(INST_LOC)/etc/$(WORDS)/dict $(WORDS)/dict
+	sudo cp $(WORDS)/dict $(WORDS)/dict.bkp
+	sudo cp $(INST_LOC)/etc/$(WORDS)/dict $(WORDS)/dict
+
+update_install_dict: $(INST_LOC)/etc/$(WORDS)/dict $(WORDS)/dict
+	sudo cp $(INST_LOC)/etc/$(WORDS)/dict $(INST_LOC)/etc/$(WORDS)/dict.bkp
+	sudo cp $(WORDS)/dict $(INST_LOC)/etc/$(WORDS)/dict
+
 clean:
 	rm -f wordscape addwords rmwords
 
