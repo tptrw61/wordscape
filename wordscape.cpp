@@ -4,6 +4,8 @@
 #include <string.h>
 #include <string>
 
+#define FILE_NAME "words"
+
 #define MIN_WORD_LENGTH 3
 #define MAX_WORD_LENGTH 8
 
@@ -28,7 +30,7 @@ int main(int argc, char **argv) {
 			return 1;
 		}
 	}
-	FILE *f = fopen("words", "r");
+	FILE *f = fopen(FILE_NAME, "r");
 	if (f == NULL) {
 		perror("words");
 		return 1;
