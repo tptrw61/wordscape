@@ -1,7 +1,7 @@
 all: wordscape addwords rmwords
 
-wordscape: search.cpp words
-	g++ search.cpp -o $@ -Wall
+wordscape: wordscape.cpp words
+	g++ wordscape.cpp -o $@ -Wall
 
 addwords: addwords.cpp words
 	g++ addwords.cpp -o $@ -Wall
